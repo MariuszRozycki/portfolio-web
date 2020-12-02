@@ -1,0 +1,45 @@
+.project {
+  width: 100vw;
+}
+
+.flex {
+  @include flex;
+  @include flex-align(flex-start, center);
+}
+
+.main-nav--text {
+  flex-basis: 10%;
+  margin-right: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.wrapper-all-icons {
+  flex-basis: 40%;
+  @include flex;
+}
+
+.wrapper-icon {
+  @include flex;
+  @include flex-align(center, center);
+  width: 50px;
+  height: 50px;
+  border: 1px solid #f8f9fa; // to make variable
+  border-radius: 50%;
+  background-color: #f8f9fa; // to make variable
+  margin-right: 15px;
+}
+
+.main-nav--icon {
+  font-size: 35px;
+  color: #ffc107; // to make variable
+}
+
+.nav-menu--wrapper {
+  flex-basis: 50%;
+  @include flex;
+  @include flex-align(flex-end, center);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
